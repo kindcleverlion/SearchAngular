@@ -1,0 +1,60 @@
+<div class="container-fluid" style="background-color:#fff;color:rgba(11, 8, 48, 0.911);height:100px;">
+        <div class="row">
+                <div class="col-sm-4"><img src="/src/BT-logo-right.png" class="img-fluid" alt="Responsive image"></div>
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 float-right ">
+                        <div class="row float-right">FDMW896 |<a> Help </a> |<a> Tutorial </a></div>
+                        <div class="row float-right">Would you like to return to legacy Clientline application <a> Click Here </a></div>
+                </div>
+        </div>
+</div>
+      
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+  <ul class="nav navbar-nav">
+    <li ><a href="#">Overview</a></li>
+    <li><a href="#">Reports</a></li>
+    <li><a href="#">Account Information</a></li>
+    <li class="active"><a href="#">Search</a></li>
+  </ul>
+  <form class="navbar-form navbar-right" action="/action_page.php">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <button type="submit" class="btn btn-info">ok</button>
+    </form>
+</nav>
+      
+
+  <div class="panel panel-primary">
+    <div class="panel-heading">Search</div>
+    <div class="panel-body">
+        <div class="dropdown" *ngIf='searchFor && searchFor.length'>
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">{{SearchOption}}
+            <span class="caret"></span></button>
+
+            <ul class="dropdown-menu" >
+              <li *ngFor='let sFor of searchFor' (click)="onSelect(sFor)" ><a href="#">{{sFor.searchby}}</a></li>
+              
+            </ul>
+         </div>
+
+
+         <div  *ngIf ='showCardHoldre'  class="Panel panel-default">
+          <div  class="panel-heading">Card Holder Activity</div>
+          
+          </div>
+       
+        <div *ngIf ='showCardIssuer' class="Panel panel-default">
+          <div  class="panel-heading">Card Issuer Information</div>
+          
+          </div>
+       
+        <div *ngIf ='showucomm' class="Panel panel-default">
+          <div class="panel-heading">uComm</div>
+          
+          </div>
+       
+         
+         
+     </div>
+  </div>

@@ -1,0 +1,20 @@
+.navbar{
+background-color: #004165;
+font-family: fa5-proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 16px;
+}
+
+      /* Note: Try to remove the following lines to see the effect of CSS positioning */
+      .affix {
+        top: 0;
+        width: 100%;
+        z-index: 9999 !important;
+      }
+    
+      .affix + .container-fluid {
+        padding-top: 70px;
+      }
+
+      .navbar > .active > a {
+        color: red;
+    }
